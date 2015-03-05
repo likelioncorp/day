@@ -18,4 +18,8 @@ window.onload = function() {
 
     return days + "일 " + hours + "시간 " + minutes + "분 " + seconds + "초";
   }
+
+  setInterval(function () {     
+    d_day.innerHTML = countdown();
+  }, 1000);
 }
